@@ -1,11 +1,11 @@
 document.getElementById("check_btn").onclick = checkAnswers;
 
 function checkAnswers(){
-	corr_answer_Arr = ["1", "3", "2",
-					   "4", "3", "2",
-					   "3", "1", "4",
-					   "3", "2", "4",
-					   "1", "1", "4"];
+	corr_answer_Arr = ["3", "4", "4",
+					   "2", "3", "1",
+					   "2", "1", "4",
+					   "2", "2", "4",
+					   "1", "2", "2"];
 	usr_answer_Arr = [];
 	question_count = 15;
 	var correct_answers = 0;
