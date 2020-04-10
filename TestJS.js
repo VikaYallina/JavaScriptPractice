@@ -1,13 +1,17 @@
 document.getElementById("check_btn").onclick = checkAnswers;
 
+//Функция проверки ответов
 function checkAnswers(){
+	// Массив с правильными ответами
 	corr_answer_Arr = ["3", "4", "4",
 					   "2", "3", "1",
 					   "2", "1", "4",
 					   "2", "2", "4",
 					   "1", "2", "2"];
+	// Массив пользовательских ответов
 	usr_answer_Arr = [];
 	question_count = 15;
+	// Заполнение пользовательского массива ответами
 	var correct_answers = 0;
 	answ_1 = document.getElementById("o_1").value;
 	usr_answer_Arr.push(answ_1);
@@ -40,12 +44,14 @@ function checkAnswers(){
 	answ_15 = document.getElementById("o_15").value;
 	usr_answer_Arr.push(answ_15);
 	
+	// Проверка ответов пользователя с помощью индексов массивов
 	for (var i = 0; i<corr_answer_Arr.length; i++){
 		if (usr_answer_Arr[i] == corr_answer_Arr[i]){
 			correct_answers+=1;
 		}
 	}
 	
+	// Перевод в проценты и вывод результата
 	result = correct_answers/question_count *100;
 	document.getElementById("result").innerHTML = "Тест выполнен верно на "+result+"% .";
 }

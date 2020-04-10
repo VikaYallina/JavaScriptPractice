@@ -1,11 +1,12 @@
 document.getElementById("Res_btn").onclick = getResult;
 
+// Функция, выполняющаяся при нажатии на кнопку
 function getResult(){
-	//
+	//Имя пользователя
 	in1 = "1. ФИО - "+document.getElementById("In_1").value;
 	document.getElementById("Out_1").innerHTML = in1;
 	
-	//
+	//Возраст пользователя
 	in2 = "2. Возраст - "+document.getElementById("In_2").value;
 	document.getElementById("Out_2").innerHTML = in2;
 	
@@ -44,7 +45,7 @@ function getResult(){
 	}else if (in5>=50 && in5<125){
 		out5 = "5. Кол-во страниц - Вы читаете достаточно старниц.";
 	} else if (in5>=125){
-		out5 = "5. Кол-во страниц - За один подход вы читаете очень много страниц. Так держать?";
+		out5 = "5. Кол-во страниц - За один подход вы читаете очень много страниц. Так держать!";
 	} else{
 		out5 = "5. Кол-во страниц - Некорректно введены данные.";
 	}
@@ -53,7 +54,7 @@ function getResult(){
 	// 6. Сколько часов в неделю вы читаете книги?
 	var in6 = document.getElementById("In_6").value;
 	if (in6>=0 && in6<2){
-		out6 = "6. Время чтения - Вым нужно отводить больше времени на чтение";
+		out6 = "6. Время чтения - Вам нужно отводить больше времени на чтение";
 	}else if (in6>=2 && in6<6){
 		out6 = "6. Время чтения - Вы отводите достаточно времени на чтение.";
 	} else if (in6>=6){
