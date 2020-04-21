@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset = "utf-8">
-<title>Тест</title>
+<title>Рекомендательная система</title>
 <!-- Стиль страницы -->
 <style>
 i{
@@ -69,6 +69,16 @@ input {
 	<i id="Out_6"></i>
 	<p/>
 	<i id="Out_7"></i>
+	
+	<!-- Список всех записей -->
+	<h2>Все записи</h2>
+	<ul></ul>
+	<p>Для просмотра/удаления записи требуется вписать в поле ввода её номер.</p>
+	<!-- Поле для ввода индекса для просмотра/удаления элемента -->
+	<input id="indexInput" type="number"/>
+	<button id="getResults">Просмотреть</button>
+	<button id="deleteResult">Удалить элемент</button>
+	<button id="deleteAll">Удалить все</button>
 </body>
 <!-- Имя используемого скрипта -->
 <script src="RecommendJS.js"></script>
